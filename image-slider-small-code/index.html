@@ -1,0 +1,17 @@
+<head>
+<title>Test</title>
+<script>
+var sliden = 1;
+function changeImg(){
+sliden+=1;
+document.getElementById("myImage").src = "slide/"+ sliden + ".png";
+if(sliden == 4){
+  sliden = 0;
+ }
+}
+</script>
+</head>
+<body>
+<img src="slide/1.png" id="myImage" onclick="javascript:changeImg();">
+</body>
+<html>
